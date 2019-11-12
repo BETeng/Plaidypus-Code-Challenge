@@ -1,13 +1,18 @@
 import React from 'react';
 import './App.css';
+import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
     <nav>
       <h1> ~ Logo ~</h1>
-      <ul className ="nav-links">
-        <li>Home (search) </li>
-        <li>Results </li>
+      <ul className="nav-links">
+        <Link class="nav-link-style" to ="/">
+          <li>Home (search) </li>
+        </Link>
+        <Link class="nav-link-style" to ="/results">
+          <li>Results </li>
+        </Link>
       </ul>
     </nav>
   );
