@@ -7,10 +7,10 @@ function Nav() {
     <nav>
       <h1> ~ Logo ~</h1>
       <ul className="nav-links">
-        <Link class="nav-link-style" to ="/">
+        <Link className="nav-link-style" to ="/">
           <li>Home (search) </li>
         </Link>
-        <Link class="nav-link-style" to ="/results">
+        <Link className="nav-link-style" to ="/results">
           <li>Results </li>
         </Link>
       </ul>
