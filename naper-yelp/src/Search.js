@@ -3,7 +3,9 @@ import './App.css';
 
 function Search() {
   
-console.log(process.env.REACT_APP_API_KEY);
+const apiKey = process.env.REACT_APP_API_KEY;
+const headerAuth = "Bearer "+apiKey;
+console.log(headerAuth);
 
   return (
     <div>
