@@ -32,8 +32,8 @@ function Search() {
   return (
     <div>
       {items.map(item => (
-        <h1 key={item.alias}>
-          <Link to={`/results/${item.alias}`}> {item.name}</Link>
+        <h1 key={item.id}>
+          <Link to={`/results/${item.id}`}> {item.name}</Link>
         </h1>
       ))}
       <h1>Search Page</h1>
