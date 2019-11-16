@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import { Link } from 'react-router-dom';
 
 function Search() {
   const apiKey = process.env.REACT_APP_API_KEY;
@@ -31,7 +32,9 @@ function Search() {
   return (
     <div>
       {items.map(item => (
-        <h1 key={item.alias}> {item.name} </h1>
+        <h1 key={item.alias}>
+          <Link to={`/results/${item.alias}`}> {item.name}</Link>
+        </h1>
       ))}
       <h1>Search Page</h1>
     </div>
