@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
 
-function SearchResult({ }) {
+function SearchResult({ match }) {
   const apiKey = process.env.REACT_APP_API_KEY;
   const headerAuth = "Bearer " + apiKey;
   console.log(headerAuth);
+  // console.log(match)
   var apiTerm;
   var apiLocation;
   var apiEndpoint = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=mexican&location=naperville&limit=10";
@@ -21,7 +22,7 @@ function SearchResult({ }) {
 
   const fetchItem = async () => {
     const fetchItem = await fetch(
-      `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/rgTIKH0L_bwVCHmR1QrJ-A`, {
+      `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/${match.params.id}`, {
       method: "GET",
       headers: {
         "Authorization": `Bearer ${apiKey}`
