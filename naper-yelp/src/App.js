@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './Nav';
 import Results from './Results';
 import Search from "./Search";
@@ -11,8 +10,10 @@ function App() {
     <Router>
       <div className="App">
         <Nav />
-        <Route path = "/" exact component = {Search} />
-        <Route path = "/results" exact component = {Results}/>
+        <Switch>
+          <Route path="/" exact component={Search} />
+          <Route path="/results" exact component={Results} />
+        </Switch>
       </div>
     </Router>
   );
