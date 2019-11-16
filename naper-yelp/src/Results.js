@@ -16,7 +16,7 @@ function SearchResult({ match }) {
 
   useEffect(() => {
     fetchItem();
-   }, []);
+  }, []);
 
   const [item, setItem] = useState({});
 
@@ -29,12 +29,16 @@ function SearchResult({ match }) {
       }
     });
     const item = await fetchItem.json();
+    setItem(item);
     console.log(item);
   };
 
   return (
     <div>
-      <h1>Item</h1>
+      <h1>{item.name}</h1>
+      <h3>Price Range: {item.price}</h3>
+      <h3>Rating: {item.rating}</h3>
+      {/* <h3>Rating: {item.categories.map()}</h3> */}
     </div>
   );
 }
