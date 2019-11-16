@@ -9,9 +9,11 @@ function Search() {
   var apiLocation;
   var apiEndpoint = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=mexican&location=naperville&limit=10";
 
-  useEffect(()=>{
+  useEffect(() => {
     fetchItems();
-  },[]);
+  }, []);
+
+  const [items, setItems] = useState([]);
 
   const fetchItems = async () => {
     const data = await fetch(
@@ -22,16 +24,20 @@ function Search() {
       }
     });
     const items = await data.json();
-    console.log(items);
+    console.log(items.businesses);
+    setItems(items.businesses);
   };
 
-    return(
-      <div>
-        <h1>Search Page</h1>
-      </div>
-    );
-  }
-  
+  return (
+    <div>
+      {items.map(item => (
+        <h1 key={item.alias}> {item.name} </h1>
+      ))}
+      <h1>Search Page</h1>
+    </div>
+  );
+}
+
 
 
 export default Search;
