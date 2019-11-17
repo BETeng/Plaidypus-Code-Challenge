@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
+import Form from "./Form";
 
 function Search() {
   const apiKey = process.env.REACT_APP_API_KEY;
   const headerAuth = "Bearer " + apiKey;
   console.log(headerAuth);
-  var apiTerm;
-  var apiLocation;
+  // var apiTerm;
+  // var apiLocation;
   var apiEndpoint = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=mexican&location=naperville&limit=10";
 
   useEffect(() => {
@@ -31,6 +32,7 @@ function Search() {
 
   return (
     <div>
+      <Form/>
       {items.map(item => (
         <h1 key={item.id}>
           <Link to={`/results/${item.id}`}> {item.name}</Link>
@@ -44,6 +46,12 @@ function Search() {
 
 
 export default Search;
+
+// search 
+
+
+
+
 
 
 // import React, { Component } from 'react';
