@@ -13,7 +13,7 @@ After installing packages, head to they Yelp Fusion site [here](https://www.yelp
 
 
 ### After acquiring your unique API key:
-* Create a .env file in the src folder of the application
+* Create a .env file in the naper-yelp folder of the application
 * Type the following into the .env file:
 ```
 REACT_APP_API_KEY=THE API KEY YOU JUST MADE
