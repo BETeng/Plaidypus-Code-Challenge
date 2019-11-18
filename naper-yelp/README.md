@@ -27,7 +27,7 @@ npm start
 ### Functionality
 The app currently does NOT have a working form page, so to make API calls, one must go the Search.js page and go to line 12 and 13 to change queries.
 
-* ApiTerm will take the name of a business or restaurant
+* ApiTerm will take the name of a business, restaurant, or type of food
 * ApiLocation will take in the name of a city or zip code
 
 
