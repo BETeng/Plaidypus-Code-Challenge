@@ -12,8 +12,9 @@ npm install
 After installing packages, head to they Yelp Fusion site [here](https://www.yelp.com/login?return_url=%2Fdevelopers%2Fv3%2Fmanage_app) and follow the directions to get an API Key
 
 
-### Storing API key in .env file
-After acquiring your unique API key, create a .env file in the src folder of the application. After creating the .env file
+### After acquiring your unique API key:
+* Create a .env file in the src folder of the application
+* Type the following into the .env file:
 ```
 REACT_APP_API_KEY=THE API KEY YOU JUST MADE
 ```
@@ -25,6 +26,9 @@ npm start
 ```
 ### Functionality
 The app currently does NOT have a working form page, so to make API calls, one must go the Search.js page and go to line 12 and 13 to change queries.
+
+* ApiTerm will take the name of a business or restaurant
+* ApiLocation will take in the name of a city or zip code
 
 
 ### Future Development
