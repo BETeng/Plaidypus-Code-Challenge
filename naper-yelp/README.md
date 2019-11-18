@@ -22,7 +22,7 @@ Open the Terminal and type:
 npm start
 ```
 #### Functionality
-The app currently does NOT have a working form page, so to make API calls, one must go the 
+The app currently does NOT have a working form page, so to make API calls, one must go the Search.js page and go to line 12 and 13 to change queries.
 
 #### Future Development
 Had trouble with getting props back from forms into page with API call. In the future, configuring of a form to make API call directly from app.
