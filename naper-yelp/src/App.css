@@ -21,3 +21,8 @@ nav{
 .nav-link-style{
   color: greenyellow;
 }
+
+img{
+  height: 200px;
+  width: 200px;
+}

@@ -10,9 +10,9 @@ function Nav() {
         <Link className="nav-link-style" to ="/">
           <li>Home (search) </li>
         </Link>
-        <Link className="nav-link-style" to ="/results">
+        {/* <Link className="nav-link-style" to ="/results">
           <li>Results </li>
-        </Link>
+        </Link> */}
       </ul>
     </nav>
   );
