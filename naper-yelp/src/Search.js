@@ -7,10 +7,12 @@ function Search() {
   const apiKey = process.env.REACT_APP_API_KEY;
   
 //MAKE CHANGES TO API QUERIES HERE
+// /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 
   var apiTerm = 'mexican';
   var apiLocation = 'naperville';
 
+// /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 
   var apiEndpoint = `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${apiTerm}&location=${apiLocation}&limit=10`;
 
@@ -44,9 +46,6 @@ function Search() {
     </div>
   );
 }
-
-
-
 export default Search;
 
 // search 

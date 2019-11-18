@@ -22,9 +22,3 @@ function App() {
 }
 
 export default App;
-
-//form input box asking for restaurant
-  //save input from form as a var
-  //switch to results page
-  //use var in the api call
-  //pull up list of restaurants based on search 
